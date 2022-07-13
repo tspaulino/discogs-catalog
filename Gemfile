@@ -77,3 +77,5 @@ gem "tailwindcss-rails", "~> 2.0"
 gem "rspec", "~> 3.11"
 
 gem "rspec-rails", "~> 5.1"
+
+gem "rails-i18n", "~> 7.0"

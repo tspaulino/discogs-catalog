@@ -19,5 +19,9 @@ module DiscogsCatalog
     # config.time_zone = "Central Time (US & Canada)"
     config.eager_load_paths << Rails.root.join("services")
     config.generators.test_framework = :rspec
+
+    #i18n setup
+    config.i18n.available_locales = [:en, :pt]
+    config.i18n.default_locale = :pt
   end
 end
