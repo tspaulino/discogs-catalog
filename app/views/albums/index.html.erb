@@ -1,0 +1,5 @@
+<div class="flex flex-wrap flex-row gap-4 justify-evenly">
+  <% @albums.each do |album| %>
+    <%= render "shared/album", {album: album} %>
+  <% end %>
+</div>

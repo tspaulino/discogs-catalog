@@ -1,0 +1,11 @@
+<div class="h-auto w-64 border-2 rounded flex flex-col justify-between">
+    <%= image_tag album["cover_image"], alt: album["title"] %>
+    <div class="flex flex-col text-center justify-center p-2">
+        <h3><%= link_to album["title"], album["resource_url"] %></h3>
+        <span class='font-thin text-sm'><%= album["year"] %></span>
+    </div>
+    <div class="flex justify-between font-light text-normal p-2">
+        <%= link_to 'View on discogs', "#" %>
+        <%= link_to 'Favorite' , "#" %>
+    </div>
+</div>
