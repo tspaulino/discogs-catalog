@@ -4,8 +4,9 @@
         <h3><%= link_to album["title"], album["resource_url"] %></h3>
         <span class='font-thin text-sm'><%= album["year"] %></span>
     </div>
+    <%= puts album.inspect %>
     <div class="flex justify-between font-light text-normal p-2">
-        <%= link_to 'View on discogs', "#" %>
+        <%= link_to 'View on discogs', "https://discogs.com#{album['uri']}" %>
         <%= link_to 'Favorite' , "#" %>
     </div>
 </div>
